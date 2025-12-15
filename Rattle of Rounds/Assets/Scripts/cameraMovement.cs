@@ -1,7 +1,7 @@
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
-public class cameraMovement : MonoBehaviour
+public class CameraMovement : MonoBehaviour
 {
     public Transform target;
     public Vector3 offset;
@@ -11,7 +11,7 @@ public class cameraMovement : MonoBehaviour
 
     }
 
-    private void Update()
+    void Update()
     {
         transform.position = target.position + offset;
     }
