@@ -6,9 +6,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] InputActionReference moveAction; // arrastra aquí Player/Move
 
-    [HideInInspector]
     Rigidbody2D rb;
 
+    [HideInInspector]
     public Vector2 moveDir 
     {
         get;
