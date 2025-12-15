@@ -6,8 +6,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] InputActionReference moveAction; // arrastra aquí Player/Move
 
+    [HideInInspector]
     Rigidbody2D rb;
-    Vector2 moveDir;
+
+    public Vector2 moveDir 
+    {
+        get;
+        private set;        // <- expuesto para otros scripts
+    }
 
     void Awake()
     {
